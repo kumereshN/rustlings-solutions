@@ -44,7 +44,7 @@ impl From<&str> for Person {
                 } else if let Ok(a) = p_age.parse::<usize>() {
                     Person {
                         name: p_name.into(),
-                        age: a
+                        age: a,
                     }
                 } else {
                     Person::default()
